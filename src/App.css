@@ -61,7 +61,7 @@
 .accordion-name{
   display: "none";
 }
-
+/*
 *::-webkit-scrollbar {
   width: 0.4em;
 }
@@ -75,7 +75,7 @@
   background-color: darkgrey;
   outline: transparent;
 }
-
+*/
 /* css for login */
 .font {
   background: #e9ecef;

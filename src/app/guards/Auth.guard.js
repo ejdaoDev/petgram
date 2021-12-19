@@ -1,6 +1,6 @@
 class AuthGuard {
   constructor() {
-    if(localStorage.getItem("auth_token") != null){
+    if(localStorage.getItem("auth_token") == null){
       this.authenticated = true;
     }else{
       this.authenticated = false;

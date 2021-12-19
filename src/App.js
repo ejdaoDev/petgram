@@ -4,16 +4,16 @@ import { ThemeProvider } from "@material-ui/styles";
 //import history from './app/services/History'
 import sessionRoutes from "./app/components/views/sessions/sessionsRoutes";
 import Dashboard from "./app/components/views/layouts/Dashboard";
-import Index from "./app/components/views/webpage/Index"
+import Index from "./app/components/views/index/Index"
 import coolerTheme from "./app/themes/coolerTheme";
+import { GlobalStyles } from "./GlobalStyles";
 import "./App.css";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import Index from "./app/components/views/webpage/Index";
 
-export default function App() {
-  return (
+export const App = () => (
     <ThemeProvider theme={coolerTheme}>
+      <GlobalStyles/>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
       <HashRouter>
         <Switch>
@@ -28,4 +28,4 @@ export default function App() {
       </BrowserRouter>
     </ThemeProvider>
   );
-}
+

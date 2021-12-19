@@ -1,28 +1,21 @@
 import React, { useState } from 'react';
-import { styled, alpha } from '@mui/material/styles';
+//import { styled, alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import InputBase from '@mui/material/InputBase';
-import Badge from '@mui/material/Badge';
+//import InputBase from '@mui/material/InputBase';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from "@mui/icons-material/Home";
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
-//import MailIcon from '@mui/icons-material/Mail';
 import PagesIcon from '@mui/icons-material/Pages';
-import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { Button } from 'reactstrap';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
 import { Link } from "react-router-dom";
-import AuthGuard from '../../../guards/Auth.guard'
-//import Swal from 'sweetalert2';
-//import history from '../../../services/History';
-
+/*
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -61,12 +54,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-
+*/
 export default function Topbar() {
-  const [dropdownOne, setDropdownOne] = useState(false);
-  const OpenCloseDropdownOne = () => {
+  
+  //const [dropdownOne, setDropdownOne] = useState(false);
+  /*const OpenCloseDropdownOne = () => {
     setDropdownOne(!dropdownOne)
-  }
+  }*/
 
   const [dropdownTwo, setDropdownTwo] = useState(false);
   const OpenCloseDropdownTwo = () => {
@@ -80,25 +74,11 @@ export default function Topbar() {
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const logout = () => {
-    if (window.confirm("Do you really want to leave?")) {
+   /* if (window.confirm("Do you really want to leave?")) {
       AuthGuard.logout(() => { localStorage.clear() })
         //history.push("/");
         window.location.href = "#/";
-    }
-   /* Swal.fire({
-      title: 'Do you wanna logout?',
-      showDenyButton: true,
-      showCancelButton: true,
-      showConfirmButton: false,
-      denyButtonText: 'Logout',
-      cancelButtonText: `Cancel`,
-    }).then((result) => {
-      if (result.isDenied) {
-        AuthGuard.logout(() => { localStorage.clear() })
-        //history.push("/");
-        window.location.href = "#/session/signin";
-      }
-    })*/
+    }*/  
   }
 
   const handleProfileMenuOpen = (event) => {
