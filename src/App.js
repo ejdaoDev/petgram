@@ -6,7 +6,7 @@ import sessionRoutes from "./app/components/views/sessions/sessionsRoutes";
 import Dashboard from "./app/components/views/layouts/Dashboard";
 import Index from "./app/components/views/index/Index"
 import coolerTheme from "./app/themes/coolerTheme";
-import { GlobalStyles } from "./GlobalStyles";
+import { GlobalStyles } from "./styles/GlobalStyles";
 import "./App.css";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
